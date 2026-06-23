@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff, #f5f3ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 550px;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  text-align: center;
+  color: #312e81;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.task-input input:focus {
+  border-color: #4f46e5;
+}
+
+.task-input button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.task-input button:hover {
+  background: #3730a3;
+}
+
+#message {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+  min-height: 20px;
+}
+
+.success {
+  color: #15803d;
+}
+
+.error {
+  color: #dc2626;
+}
+
+#taskList {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #f8fafc;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #4f46e5;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 7px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background: #f59e0b;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.edit-btn:hover {
+  background: #d97706;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
